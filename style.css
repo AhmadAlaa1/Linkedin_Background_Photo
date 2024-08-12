@@ -1,0 +1,410 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: #131923;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+/* ======================================================== */
+
+.container{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.background{
+    width: 158.4rem;
+    height: 39.6rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    z-index: 0;
+}
+
+.background::after{
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-image:linear-gradient(to left,#020304d3,#0d1117), url("https://img.freepik.com/free-vector/matrix-style-binary-code-digital-falling-numbers-blue-background_1017-37387.jpg?size=626&ext=jpg&ga=GA1.1.143816441.1721603183&semt=ais_hybrid");
+    z-index: -2;
+    filter:blur(0.3rem) grayscale(100%);
+}
+
+.profile-after{
+    display: flex;
+    /* background-color: #EEE; */
+    position: relative;
+    width: 100%;
+    justify-content: space-around;
+}
+
+.profile{
+    width: 15rem;
+    height: 15rem; 
+    border-radius: 50%; 
+    object-fit: cover; 
+    filter: drop-shadow(0 0 2rem #1c2432);
+    position: relative;
+    z-index: 1;
+}
+
+.profile-after div{
+    position: relative;
+}
+.icons{
+    width: 30%;
+    padding-bottom: 7rem;
+    position: relative;
+    transition: all 0.5s ease;
+}
+
+
+.icons :nth-child(1){
+    filter: drop-shadow(0px 0px 10px #f16529);
+    position: absolute;
+    top:-5rem;
+    left:-30rem;
+    transform: scale(1.8) rotate(-5deg);
+}
+
+.icons :nth-child(2){
+    filter: drop-shadow(0px 0px 10px #33a9dc);
+    position: absolute;
+    top:2rem;
+    left:-20rem;
+    transform: scale(1.5) rotate(-10deg);
+}
+.icons :nth-child(3){
+    filter: drop-shadow(0px 0px 10px #f0db4f);
+    position: absolute;
+    top:7rem;
+    left:-5rem;
+    transform: scale(1.2) rotate(-25deg);
+}
+.icons :nth-child(4){
+    filter: drop-shadow(0px 0px 10px #777bb1);
+    position: absolute;
+    top:7rem;
+    right:-6rem;
+    transform: scale(1.2) rotate(15deg);
+    
+}
+.icons :nth-child(5){
+    filter: drop-shadow(0px 0px 10px #659ad2);
+    position: absolute;
+    top:2rem;
+    right:-20rem;
+    transform: scale(1.2) rotate(40deg);
+
+}
+.icons :nth-child(6){
+    filter: drop-shadow(0px 0px 10px #33CCFF);
+    position: absolute;
+    top:-5rem;
+    right:-30rem;
+    transform: scale(1.2) rotate(-20deg);
+
+}
+
+.github-icon{
+    background-color: white;
+    filter: drop-shadow(0px 0px 10px white);
+    border-radius: 2rem;
+}
+
+.linked-icon{
+    filter: drop-shadow(0px 0px 10px #007ebb);
+    transform: scale(1.5);
+}
+
+
+.line1{
+    position: relative;
+    width: 30%;
+    height: 0.5%;
+    background-color: white;
+    left: 27rem;
+    top: 5rem;
+    transform: rotate(-5deg);
+}
+
+.line1::after{
+    content: "Connect With Me 🔗";
+    font-family: "Kanit";
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    color: white;
+    top: -2rem;
+    filter: drop-shadow(0 0 1rem white);
+    
+}
+
+.line2{
+    position: relative;
+    width: 30%;
+    height: 0.5%;
+    background-color: white;
+    left: -27rem;
+    top: 5rem;
+    transform: rotate(5deg);
+}
+.line2::after{
+    content: "Check My Github Profile 🔗";
+    font-family: "Kanit";
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    color: white;
+    top: -2rem;
+    filter: drop-shadow(0 0 1rem white);
+
+}
+
+.line3{
+    position: relative;
+    width: 30%;
+    height: 0.5%;
+    background-image: linear-gradient(to left, #1c243200,#f16529);
+    left: -27rem;
+    top: 11rem;
+    transform: rotate(-5deg);
+}
+
+.line3::after{
+    content: "Html";
+    font-family: "Kanit";
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    color: white;
+    top: -2rem;
+    filter: drop-shadow(0 0 1rem white);
+    
+}
+
+
+.line4{
+    position: relative;
+    width: 25%;
+    height: 0.5%;
+    background-image: linear-gradient(to left, #1c243200,#33a9dc);
+    left: -23rem;
+    top: 15rem;
+    transform: rotate(-15deg);
+}
+
+.line4::after{
+    content: "Css";
+    font-family: "Kanit";
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    color: white;
+    top: -2rem;
+    filter: drop-shadow(0 0 1rem white);
+    
+}
+
+.line5{
+    position: relative;
+    width: 15%;
+    height: 0.5%;
+    background-image: linear-gradient(to left, #1c243200,#f0db4f);
+    left: -15rem;
+    top: 19rem;
+    transform: rotate(-30deg);
+}
+
+.line5::after{
+    content: "JavaScript";
+    font-family: "Kanit";
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    color: white;
+    top: -2rem;
+    filter: drop-shadow(0 0 1rem white);
+    
+}
+
+.line6{
+    position: relative;
+    width: 30%;
+    height: 0.5%;
+    background-image: linear-gradient(to right, #1c243200,#777bb1);
+    left: 8rem;
+    top: 15rem;
+    transform: rotate(28deg);
+}
+
+.line6::after{
+    content: "Php";
+    font-family: "Kanit";
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    color: white;
+    top: -2rem;
+    left: 10rem;
+    filter: drop-shadow(0 0 1rem white);
+    
+}
+
+.line7{
+    position: relative;
+    width: 28%;
+    height: 0.5%;
+    background-image: linear-gradient(to right, #1c243200,#659ad2);
+    left: 20rem;
+    top: 14rem;
+    transform: rotate(15deg);
+}
+
+.line7::after{
+    content: "C++";
+    font-family: "Kanit";
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    color: white;
+    top: -2rem;
+    filter: drop-shadow(0 0 1rem white);
+    
+}
+
+.line8{
+    background-image: linear-gradient(to right, #1c243200,#33CCFF);
+    position: relative;
+    width: 35%;
+    height: 0.5%;
+    left: 25rem;
+    top: 9.3rem;
+    transform: rotate(7deg);
+}
+
+.line8::after{
+    content: "Python";
+    font-family: "Kanit";
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    color: white;
+    top: -2rem;
+    filter: drop-shadow(0 0 1rem white);
+    
+}
+
+/* =================================== */
+.user-name{
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: white;
+    font-size: 2.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    letter-spacing: 0.8rem;
+    padding-left: 3rem;
+}
+
+.user-name :nth-child(1){
+    font-size: 4rem;
+    color: #a31d1d;
+}
+
+.user-name :nth-child(2),.user-name :nth-child(3),.user-name :nth-child(4),.user-name :nth-child(5){
+    font-weight: 500;
+    color: #EEEE;
+}
+
+.user-name :nth-child(6){
+    font-size: 3rem;
+}
+
+.user-name :nth-child(6) span{
+    font-size: 3rem;
+    color: #a31d1d;
+}
+
+.user-name :nth-child(7){
+    font-size: 4rem;
+    color: #a31d1d;
+}
+
+.user-name :nth-child(8),.user-name :nth-child(9),.user-name :nth-child(10){
+    font-weight: 500;
+    color: #EEEE;
+}
+
+.user-name-description{
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    font-size: 1rem;
+    letter-spacing: 0.5rem;
+    text-transform: uppercase;
+    color: white;
+    margin-left: 3rem;
+    padding-top: 1rem;
+    display: flex;
+}
+
+.user-name-description span{
+    font-size: 1.2rem;
+    color: #a31d1d;
+}
